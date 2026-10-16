@@ -58,25 +58,27 @@ export default function Home() {
       {/* Subtle Warm Amber Glows */}
       <div className="absolute top-[-5%] right-[-5%] w-[550px] h-[550px] rounded-full bg-[#B8860B]/5 blur-[130px] -z-10 pointer-events-none animate-warm-1" />
       <div className="absolute top-[30%] left-[-10%] w-[600px] h-[600px] rounded-full bg-[#B8860B]/4 blur-[150px] -z-10 pointer-events-none animate-warm-2" />
+      <div className="absolute inset-x-0 overflow-hidden" />
 
       {/* Hero Section */}
-      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-12 items-center">
           
           {/* Text Content */}
           <div className="flex flex-col gap-7 text-center lg:text-right">
             
             {/* Section Tag */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#F5F3F0] border border-[#E8E4DF] text-[#B8860B] font-bold text-xs w-fit mx-auto lg:mx-0 shadow-sm">
-              <span className="relative flex h-2 w-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#F5F3F0] border border-[#E8E4DF] text-[#B8860B] font-bold text-[11px] sm:text-xs w-fit mx-auto lg:mx-0 shadow-sm max-w-full">
+              <span className="relative flex h-2 w-2 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#B8860B] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#B8860B]"></span>
               </span>
-              المستشار بهاء صلاح البحيري | محامٍ بالنقض والدستورية والإدارية العليا
+              <span className="truncate">المستشار بهاء صلاح البحيري | محامٍ بالنقض والدستورية والإدارية العليا</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.28] text-[#1A1A1A] tracking-tight">
-              حماية حقوقك بقوة القانون <br />
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.28] text-[#1A1A1A] tracking-tight">
+              حماية حقوقك بقوة القانون
+              <br />
               <span className="text-[#B8860B]">بكل ثقة واحترافية</span>
             </h1>
             
@@ -166,8 +168,8 @@ export default function Home() {
               {/* Decorative Subtle Shadow */}
               <div className="absolute -bottom-6 -right-6 w-full h-full bg-[#B8860B]/10 rounded-2xl blur-2xl -z-10"></div>
               
-              {/* Floating Badge */}
-              <div className="absolute -left-6 top-10 bg-white p-3.5 rounded-xl shadow-hover border border-[#E8E4DF] flex items-center gap-3 z-20 bounce-slow">
+              {/* Floating Badge - hidden on mobile to prevent overflow */}
+              <div className="hidden sm:flex absolute -left-6 top-10 bg-white p-3.5 rounded-xl shadow-hover border border-[#E8E4DF] items-center gap-3 z-20 bounce-slow">
                 <div className="w-10 h-10 rounded-full bg-[#FDF9F0] border border-[#B8860B]/20 flex items-center justify-center text-[#B8860B]">
                   <Clock className="w-5 h-5" />
                 </div>

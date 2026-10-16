@@ -18,7 +18,7 @@ function PublicLayout() {
   const isBookingPage = location.pathname === '/booking';
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#FAFAF8] text-[#1A1A1A] relative selection:bg-[#B8860B]/20 selection:text-[#1A1A1A]">
+    <div className="flex flex-col min-h-screen bg-[#FAFAF8] text-[#1A1A1A] relative selection:bg-[#B8860B]/20 selection:text-[#1A1A1A] overflow-x-hidden">
       <Navbar />
       <main className="flex-grow">
         <Outlet />

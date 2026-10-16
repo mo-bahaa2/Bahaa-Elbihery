@@ -23,7 +23,7 @@ export default function Navbar() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full glass-nav select-none transition-colors">
+    <nav className="sticky top-0 z-50 w-full glass-nav select-none transition-colors overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
@@ -35,11 +35,13 @@ export default function Navbar() {
               className="w-12 h-12 rounded-xl object-contain shadow-sm group-hover:scale-105 transition-transform duration-300"
             />
             <div className="flex flex-col">
-              <span className="font-extrabold text-lg sm:text-xl text-[#1A1A1A] tracking-tight group-hover:text-[#B8860B] transition-colors">
-                المستشار بهاء البحيري
+              <span className="font-extrabold text-base sm:text-xl text-[#1A1A1A] tracking-tight group-hover:text-[#B8860B] transition-colors">
+                <span className="sm:hidden">بهاء البحيري</span>
+                <span className="hidden sm:inline">المستشار بهاء البحيري</span>
               </span>
-              <span className="text-[11px] text-[#B8860B] font-bold tracking-wider">
-                محامٍ بالنقض والدستورية العليا
+              <span className="text-[10px] sm:text-[11px] text-[#B8860B] font-bold tracking-wider">
+                <span className="sm:hidden">محامٍ بالنقض والدستورية</span>
+                <span className="hidden sm:inline">محامٍ بالنقض والدستورية العليا</span>
               </span>
             </div>
           </Link>

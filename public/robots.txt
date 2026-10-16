@@ -1,9 +1,6 @@
-# robots.txt for bahaaelbeheiry.com
+# robots.txt for bahaa-elbihery.vercel.app
 User-agent: *
 Allow: /
 
-# Disallow administrative or temporary routes if any
-Disallow: /api/
-
 # Sitemap location
-Sitemap: https://bahaaelbeheiry.com/sitemap.xml
+Sitemap: https://bahaa-elbihery.vercel.app/sitemap.xml

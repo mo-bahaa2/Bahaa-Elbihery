@@ -81,7 +81,7 @@ export default function Home() {
             </h1>
             
             <p className="text-lg text-[#6B6B6B] max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              المكتب الرسمي للمستشار بهاء صلاح البحيري - خبرة تمتد لأكثر من 20 عاماً في قضايا الجنايات، النزاعات المدنية، قضايا الأسرة، والقضاء الإداري ومجلس الدولة.
+              خبرة تمتد لأكثر من 20 عاماً في تقديم الاستشارات القانونية، المرافعة في أعقد القضايا، ومراجعة العقود لضمان حقوقك بأعلى معايير الأمان والشفافية.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mt-2">

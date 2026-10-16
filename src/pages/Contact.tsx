@@ -122,8 +122,7 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">مقر المكتب</h3>
               <p className="text-[#6B6B6B] leading-relaxed mb-4 text-sm sm:text-base">
-                المهندسين، الجيزة،<br />
-                جمهورية مصر العربية
+                المهندسين، الجيزة
               </p>
               <a href="#" className="text-[#B8860B] hover:text-[#996515] font-bold text-sm hover:underline">
                 عرض على الخريطة

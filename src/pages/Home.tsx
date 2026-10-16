@@ -61,19 +61,19 @@ export default function Home() {
       <div className="absolute inset-x-0 overflow-hidden" />
 
       {/* Hero Section */}
-      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-12 items-center">
           
           {/* Text Content */}
           <div className="flex flex-col gap-7 text-center lg:text-right">
             
             {/* Section Tag */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#F5F3F0] border border-[#E8E4DF] text-[#B8860B] font-bold text-[11px] sm:text-xs w-fit mx-auto lg:mx-0 shadow-sm max-w-full">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#F5F3F0] border border-[#E8E4DF] text-[#B8860B] font-bold text-[11px] sm:text-xs mx-auto lg:mx-0 shadow-sm max-w-[90vw] lg:max-w-full overflow-hidden">
               <span className="relative flex h-2 w-2 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#B8860B] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#B8860B]"></span>
               </span>
-              <span className="truncate">المستشار بهاء صلاح البحيري | محامٍ بالنقض والدستورية والإدارية العليا</span>
+              <span className="truncate text-right">المستشار بهاء صلاح البحيري | محامٍ بالنقض والدستورية والإدارية العليا</span>
             </div>
             
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.28] text-[#1A1A1A] tracking-tight">
@@ -103,7 +103,7 @@ export default function Home() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex items-center justify-center lg:justify-start gap-8 mt-4 pt-6 border-t border-[#E8E4DF]">
+            <div className="flex items-center justify-center lg:justify-start gap-8 mt-4 pt-6 border-t border-[#E8E4DF] pb-20 sm:pb-0">
               <div className="flex flex-col gap-1">
                 <span className="text-3xl font-extrabold text-[#1A1A1A]">20+</span>
                 <span className="text-xs text-[#6B6B6B] font-semibold">سنة خبرة</span>

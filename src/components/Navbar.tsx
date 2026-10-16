@@ -23,7 +23,7 @@ export default function Navbar() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full glass-nav select-none transition-colors overflow-x-hidden">
+    <nav className="sticky top-0 z-50 w-full glass-nav select-none transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           

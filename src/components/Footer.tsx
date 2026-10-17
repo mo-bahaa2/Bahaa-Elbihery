@@ -49,15 +49,29 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-[#9E9B94]">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#B8860B] shrink-0 mt-0.5" />
-                <span>المهندسين، الجيزة</span>
+                <div className="flex flex-col gap-1">
+                  <span>المهندسين، الجيزة</span>
+                  <a 
+                    href="https://goo.gl/maps/f9bpNKoGHRLPx8BY7" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs text-[#D4A84B] hover:text-[#B8860B] font-semibold underline underline-offset-4 flex items-center gap-1 transition-colors"
+                  >
+                    عرض على الخريطة ↗
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#B8860B] shrink-0" />
-                <span dir="ltr" className="font-mono text-white">+20 122 374 7594</span>
+                <a href="tel:+201223747594" className="hover:text-[#D4A84B] transition-colors" dir="ltr">
+                  <span className="font-mono text-white">+20 122 374 7594</span>
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#B8860B] shrink-0" />
-                <span dir="ltr" className="font-mono text-white">info@adala-law.com</span>
+                <a href="mailto:bahaaelbehiry012@gmail.com" className="hover:text-[#D4A84B] transition-colors">
+                  <span dir="ltr" className="font-mono text-white">bahaaelbehiry012@gmail.com</span>
+                </a>
               </li>
             </ul>
           </div>

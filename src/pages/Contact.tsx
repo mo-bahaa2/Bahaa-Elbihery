@@ -124,8 +124,13 @@ export default function Contact() {
               <p className="text-[#6B6B6B] leading-relaxed mb-4 text-sm sm:text-base">
                 المهندسين، الجيزة
               </p>
-              <a href="#" className="text-[#B8860B] hover:text-[#996515] font-bold text-sm hover:underline">
-                عرض على الخريطة
+              <a 
+                href="https://goo.gl/maps/f9bpNKoGHRLPx8BY7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#B8860B] hover:text-[#996515] font-bold text-sm hover:underline inline-flex items-center gap-1.5"
+              >
+                عرض على الخريطة ↗
               </a>
             </div>
 
@@ -154,7 +159,7 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold mb-2">البريد الإلكتروني</h3>
               <p className="text-[#9E9B94] text-sm mb-2">للمراسلات الرسمية والشركات</p>
-              <a href="mailto:info@adala-law.com" className="text-white font-mono hover:text-[#D4A84B] transition-colors">info@adala-law.com</a>
+              <a href="mailto:bahaaelbehiry012@gmail.com" className="text-white font-mono hover:text-[#D4A84B] transition-colors break-all">bahaaelbehiry012@gmail.com</a>
             </div>
           </div>
 

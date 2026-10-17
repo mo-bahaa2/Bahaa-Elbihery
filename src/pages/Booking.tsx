@@ -1,11 +1,19 @@
 import { useState, useEffect } from 'react';
-import { Calendar as CalendarIcon, Clock, User, Phone, Mail, FileText, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Calendar as CalendarIcon, Clock, User, Phone, Mail, FileText, CheckCircle2, AlertCircle, Scale } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import LoadingSpinner from '../components/LoadingSpinner';
 
+const CASE_TYPES = [
+  { id: 'جنائي', label: 'جنائي', desc: 'جنح، جنايات، قضايا وشكاوى جنائية' },
+  { id: 'مدني', label: 'مدني', desc: 'عقود، تعويضات، منازعات مدنية وعقارية' },
+  { id: 'أسرة', label: 'أسرة', desc: 'أحوال شخصية، نفقة، حضانة، تركات' },
+  { id: 'قضاء إداري', label: 'قضاء إداري', desc: 'مجلس الدولة ومنازعات القرارات الإدارية' }
+];
+
 export default function Booking() {
   const [selectedService, setSelectedService] = useState('consultation');
+  const [selectedCaseType, setSelectedCaseType] = useState('جنائي');
   const [selectedDateObj, setSelectedDateObj] = useState<{dateStr: string, dayNum: number, dayName: string, isoDay: number, isWorkDay: boolean} | null>(null);
   const [selectedTimeObj, setSelectedTimeObj] = useState<{raw: string, formatted: string} | null>(null);
   const [name, setName] = useState('');
@@ -172,7 +180,8 @@ export default function Booking() {
           service_id: selectedService,
           booking_date: selectedDateObj?.dateStr,
           booking_time: selectedTimeObj?.raw,
-          notes: details || undefined
+          notes: details || undefined,
+          case_type: selectedCaseType
         })
       });
 
@@ -267,6 +276,46 @@ export default function Booking() {
                         </div>
                       </button>
                     ))}
+                  </div>
+                </div>
+
+                {/* Case / Specialty Selection */}
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <label className="block text-sm font-bold text-[#1A1A1A]">نوع القضية / الاستشارة</label>
+                    <span className="text-xs text-[#6B6B6B] font-medium">اختر التخصص المطلوب</span>
+                  </div>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                    {CASE_TYPES.map((type) => {
+                      const isSelected = selectedCaseType === type.id;
+                      return (
+                        <button
+                          key={type.id}
+                          type="button"
+                          onClick={() => setSelectedCaseType(type.id)}
+                          className={`p-3.5 text-right rounded-xl border-2 transition-all duration-200 flex flex-col justify-between ${
+                            isSelected 
+                              ? 'border-[#B8860B] bg-[#FDF9F0] shadow-sm ring-1 ring-[#B8860B]' 
+                              : 'border-[#E8E4DF] bg-white hover:border-[#D4CEBF]'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between mb-1.5">
+                            <span className={`font-bold text-sm ${isSelected ? 'text-[#B8860B]' : 'text-[#1A1A1A]'}`}>
+                              {type.label}
+                            </span>
+                            <span className={`w-4 h-4 rounded-full border flex items-center justify-center ${
+                              isSelected ? 'border-[#B8860B] bg-[#B8860B] text-white' : 'border-[#D4CEBF]'
+                            }`}>
+                              {isSelected && <span className="w-1.5 h-1.5 bg-white rounded-full" />}
+                            </span>
+                          </div>
+                          <span className="text-[11px] text-[#6B6B6B] leading-snug">
+                            {type.desc}
+                          </span>
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
 
@@ -447,6 +496,13 @@ export default function Booking() {
                 <div className="flex justify-between items-start">
                   <div className="text-[#9E9B94] text-sm">الخدمة</div>
                   <div className="font-bold text-left text-white">{activeService?.name || 'لم يحدد'}</div>
+                </div>
+                <div className="flex justify-between items-start">
+                  <div className="text-[#9E9B94] text-sm">نوع القضية</div>
+                  <div className="font-bold text-left text-[#D4A84B] flex items-center gap-1.5">
+                    <Scale className="w-3.5 h-3.5 text-[#B8860B]" />
+                    {selectedCaseType}
+                  </div>
                 </div>
                 <div className="flex justify-between items-start">
                   <div className="text-[#9E9B94] text-sm">الموعد</div>

@@ -34,12 +34,12 @@ export default function Home() {
     {
       title: 'القضايا الجنائية (جنائي)',
       icon: <ShieldAlert className="w-7 h-7" />,
-      desc: 'المرافعة في قضايا الجنايات والجنح المعقدة، قضايا الأموال العامة، وجلسات التحقيق بنيابة أمن الدولة ومحكمة النقض.'
+      desc: 'المرافعة في قضايا الجنايات والجنح ، قضايا الأموال العامة،ومحكمة النقض الجنائي.'
     },
     {
       title: 'القضايا المدنية (مدني)',
       icon: <Scale className="w-7 h-7" />,
-      desc: 'دعاوى التعويضات، منازعات العقود والملكية العقارية، قضايا الإيجارات والمطالبات المالية والتجارية الكبرى.'
+      desc: 'دعاوى التعويضات، منازعات العقود والملكية العقارية، قضايا الإيجارات والمطالبات المالية والتجارية .'
     },
     {
       title: 'قضايا الأسرة (أحوال شخصية)',
@@ -47,7 +47,7 @@ export default function Home() {
       desc: 'دعاوى النفقات، الحضانة، الخلع، الطلاق، والوصايا وتقسيم المواريث والتركات بأعلى معايير السرية التامة.'
     },
     {
-      title: 'القضاء الإداري ومجلس الدولة',
+      title: 'القضاء الإداري والإدارية العليا بمجلس الدولة',
       icon: <Landmark className="w-7 h-7" />,
       desc: 'الطعن بالإلغاء على القرارات الإدارية، منازعات العاملين بالدولة والترقيات، تراخيص المشاريع والعقود الإدارية.'
     }
@@ -83,7 +83,7 @@ export default function Home() {
             </h1>
             
             <p className="text-lg text-[#6B6B6B] max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              خبرة تمتد لأكثر من 20 عاماً في تقديم الاستشارات القانونية، المرافعة في أعقد القضايا، ومراجعة العقود لضمان حقوقك بأعلى معايير الأمان والشفافية.
+              خبرة تمتد لأكثر من 30 عاماً في تقديم الاستشارات القانونية، المرافعة في أعقد القضايا، ومراجعة العقود لضمان حقوقك بأعلى معايير الأمان والشفافية.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mt-2">
@@ -103,7 +103,7 @@ export default function Home() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex items-center justify-center lg:justify-start gap-8 mt-4 pt-6 border-t border-[#E8E4DF] pb-20 sm:pb-0">
+            {/* <div className="flex items-center justify-center lg:justify-start gap-8 mt-4 pt-6 border-t border-[#E8E4DF] pb-20 sm:pb-0">
               <div className="flex flex-col gap-1">
                 <span className="text-3xl font-extrabold text-[#1A1A1A]">20+</span>
                 <span className="text-xs text-[#6B6B6B] font-semibold">سنة خبرة</span>
@@ -118,7 +118,7 @@ export default function Home() {
                 <span className="text-3xl font-extrabold text-[#1A1A1A]">100%</span>
                 <span className="text-xs text-[#6B6B6B] font-semibold">سرية تامة</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Mini Form Card (Editorial Card) */}

@@ -19,7 +19,7 @@ export default function About() {
           </div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-[#1A1A1A] mb-4 tracking-tight">عن المحامي</h1>
           <p className="text-base sm:text-lg text-[#6B6B6B] max-w-2xl mx-auto leading-relaxed">
-            خبرة قانونية ممتدة لأكثر من 20 عاماً في ساحات المحاكم المصرية، وتخصص دقيق في قضايا النقض والاستشارات القانونية المعقدة.
+            خبرة قانونية ممتدة لأكثر من 30 عاماً في ساحات المحاكم المصرية، وتخصص دقيق في قضايا النقض والاستشارات القانونية المعقدة.
           </p>
         </div>
 
@@ -54,10 +54,10 @@ export default function About() {
                 </h2>
                 <div className="space-y-4 text-[#6B6B6B] leading-loose text-justify text-sm sm:text-base">
                   <p>
-                    <strong className="text-[#1A1A1A]">المستشار / بهاء صلاح البحيري</strong> (المعروف بـ مستشار بهاء البحيري)، المحامي المقيد بالنقض والدستورية والإدارية العليا. تخرج من كلية الحقوق جامعة القاهرة، وأسس صرحه القانوني ليكون مرجعاً موثوقاً في تقديم الاستشارات القانونية والمرافعة القضائية الرفيعة.
+                    <strong className="text-[#1A1A1A]">المستشار / بهاء صلاح البحيري</strong> المحامي المقيد بالنقض والدستورية والإدارية العليا. تخرج من كلية الحقوق جامعة القاهرة، وأسس صرحه القانوني ليكون مرجعاً موثوقاً في تقديم الاستشارات القانونية والمرافعة القضائية الرفيعة.
                   </p>
                   <p>
-                    يتمتع بخبرة قضائية ممتدة لأكثر من 20 عاماً تغطي التخصصات المحورية: <strong>القضايا الجنائية الكبرى (جنائي)، القضايا والمنازعات المدنية والتعويضات (مدني)، قضايا الأسرة والأحوال الشخصية والمواريث (أسرة)، ودعاوى القضاء الإداري ومجلس الدولة والطعون الدستورية</strong>، بجانب تخصصه البارز في كتابة أسباب الطعن والمرافعة أمام محكمة النقض.
+                    يتمتع بخبرة قضائية ممتدة لأكثر من 30 عاماً تغطي التخصصات المحورية: <strong>القضايا الجنائية  (جنائي و جنح)، القضايا والمنازعات المدنية والتعويضات (مدني)، قضايا الأسرة والأحوال الشخصية والمواريث (أسرة)،و القضايا العمالية ودعاوى القضاء الإداري ومجلس الدولة والطعون الدستورية</strong>، بجانب تخصصه البارز في كتابة أسباب الطعن والمرافعة أمام محكمة النقض.
                   </p>
                   <p>
                     يؤمن بأن حماية حقوق الموكل هي أمانة وواجب دستوري وأخلاقي، مع التزام المكتب المطلق بالسرية والشفافية التامة في كافة مراحل النزاع القانوني.
@@ -70,29 +70,29 @@ export default function About() {
             <section className="bg-white rounded-3xl p-8 lg:p-10 border border-[#E8E4DF] shadow-soft">
               <h2 className="text-2xl font-bold text-[#1A1A1A] mb-8 flex items-center gap-3">
                 <Award className="w-6 h-6 text-[#B8860B]" />
-                أبرز الإنجازات القضائية
+               المهارات و الخبرات
               </h2>
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="p-6 bg-[#FAFAF8] rounded-2xl border border-[#E8E4DF] hover:border-[#B8860B]/40 hover:shadow-soft transition-all">
                   <div className="w-12 h-12 bg-[#FDF9F0] border border-[#B8860B]/20 rounded-xl shadow-sm flex items-center justify-center text-[#B8860B] mb-4">
                     <Scale className="w-6 h-6" />
                   </div>
-                  <h3 className="font-bold text-[#1A1A1A] mb-2">قضايا النقض</h3>
-                  <p className="text-sm text-[#6B6B6B] leading-relaxed">نجاح في قبول العشرات من الطعون بالنقض وتصحيح أحكام نهائية معيبة في قضايا جنائية ومدنية كبرى.</p>
+                  <h3 className="font-bold text-[#1A1A1A] mb-2">خبره ثلاثون عاما في قضايا الجنايات و الجنح و القضايا المدنيه و الايجارات و قضايا الاسرة و القضاء الإداري</h3>
+                  {/* <p className="text-sm text-[#6B6B6B] leading-relaxed">نجاح في قبول العشرات من الطعون بالنقض وتصحيح أحكام نهائية معيبة في قضايا جنائية ومدنية كبرى.</p> */}
                 </div>
                 <div className="p-6 bg-[#FAFAF8] rounded-2xl border border-[#E8E4DF] hover:border-[#B8860B]/40 hover:shadow-soft transition-all">
                   <div className="w-12 h-12 bg-[#FDF9F0] border border-[#B8860B]/20 rounded-xl shadow-sm flex items-center justify-center text-[#B8860B] mb-4">
                     <BookOpen className="w-6 h-6" />
                   </div>
-                  <h3 className="font-bold text-[#1A1A1A] mb-2">تأسيس ودمج الشركات</h3>
-                  <p className="text-sm text-[#6B6B6B] leading-relaxed">الإشراف القانوني الكامل على دمج وتأسيس كيانات تجارية عملاقة برأس مال يتجاوز مئات الملايين.</p>
+                  <h3 className="font-bold text-[#1A1A1A] mb-2">محكم دولي معتمد بمجلس الوحده الاقتصاديه بمنظمة جامعة الدول العربية</h3>
+                  {/* <p className="text-sm text-[#6B6B6B] leading-relaxed">الإشراف القانوني الكامل على دمج وتأسيس كيانات تجارية عملاقة برأس مال يتجاوز مئات الملايين.</p> */}
                 </div>
                 <div className="p-6 bg-[#FAFAF8] rounded-2xl border border-[#E8E4DF] hover:border-[#B8860B]/40 hover:shadow-soft transition-all sm:col-span-2">
                   <div className="w-12 h-12 bg-[#FDF9F0] border border-[#B8860B]/20 rounded-xl shadow-sm flex items-center justify-center text-[#B8860B] mb-4">
                     <ShieldCheck className="w-6 h-6" />
                   </div>
-                  <h3 className="font-bold text-[#1A1A1A] mb-2">البراءة في قضايا شائكة</h3>
-                  <p className="text-sm text-[#6B6B6B] leading-relaxed">الحصول على أحكام براءة في قضايا مالية واقتصادية معقدة بفضل التحليل الدقيق لأوراق القضية وبناء الدفوع القانونية المحكمة.</p>
+                  <h3 className="font-bold text-[#1A1A1A] mb-2">كتابه جميع العقود بين الافراد و عقود الشركات بجميع انواعها - مستشار قانوني للعديد من الشركات </h3>
+                  {/* <p className="text-sm text-[#6B6B6B] leading-relaxed">الحصول على أحكام براءة في قضايا مالية واقتصادية معقدة بفضل التحليل الدقيق لأوراق القضية وبناء الدفوع القانونية المحكمة.</p> */}
                 </div>
               </div>
             </section>
@@ -108,7 +108,7 @@ export default function About() {
               
               <h3 className="text-xl font-bold mb-8 border-b border-[#2A2925] pb-4 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#B8860B]"></span>
-                بيانات القيد والتصاريح
+               نبذه عن المحامي
               </h3>
               
               <ul className="space-y-6">

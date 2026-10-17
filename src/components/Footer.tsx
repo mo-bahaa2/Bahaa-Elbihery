@@ -47,19 +47,16 @@ export default function Footer() {
               تواصل معنا
             </h3>
             <ul className="space-y-4 text-sm text-[#9E9B94]">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#B8860B] shrink-0 mt-0.5" />
-                <div className="flex flex-col gap-1">
-                  <span>المهندسين، الجيزة</span>
-                  <a 
-                    href="https://goo.gl/maps/f9bpNKoGHRLPx8BY7" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-xs text-[#D4A84B] hover:text-[#B8860B] font-semibold underline underline-offset-4 flex items-center gap-1 transition-colors"
-                  >
-                    عرض على الخريطة ↗
-                  </a>
-                </div>
+              <li className="flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-[#B8860B] shrink-0" />
+                <a 
+                  href="https://goo.gl/maps/f9bpNKoGHRLPx8BY7" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#D4A84B] hover:text-[#B8860B] underline underline-offset-4 font-medium transition-colors"
+                >
+                  المهندسين، الجيزة
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#B8860B] shrink-0" />
